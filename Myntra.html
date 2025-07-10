@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping for Women,Mens and Kids</title>
+    <link rel="shortcut icon" href="./website/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+
+    <style>
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .parent{
+        border: 1px solid;
+    }
+    .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  padding-top: 10px;
+  z-index: 1000;
+  background: linear-gradient(to right, #edc2ed, #f0eaea);
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+        .logo{
+            position: absolute;
+            left: 40px;
+            top: 15px;
+            height: 65px;
+            width: 65px;
+        }
+        .nav-links {
+      display: flex;
+      gap: 40px;
+      font-weight: bold;
+      position: absolute;
+      top: 40px;
+      left: 140px;
+        }
+    
+        .nav-links a {
+      text-decoration: none;
+      color: #2d2d2d;
+      position: relative;
+    }
+    .searchbar {
+      display: flex;
+      align-items: center;
+      background-color: #f5f5f6;
+      top: 40px;
+      border-radius: 7px;
+      width: 300px;
+      position: absolute;
+      left: 850px;
+      height: 40px;
+    }
+     .searchbar input {
+
+      border: none;
+      background: transparent;
+      outline: none;
+      margin-left: 8px;
+      width: 100%;
+    }
+   .icons {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      position: absolute;
+      left: 1200px;
+      top: 40px;
+
+    }
+
+    .iconItem {
+      text-align: center;
+      font-size: 14px;
+      color: #2d2d2d;
+    }
+
+    .iconItem i {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+    .content{
+      height: 425px;
+      width: 1001px;
+      position: absolute;
+      top: 130px;
+    }
+    .text{
+        position: absolute;
+        top: 200px;
+        left: 1100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: oblique;
+       font: lighter;
+    }
+    .star{
+        position: absolute;
+        top: 600px;
+       color: #2f2f34;
+        font-size: 18px;
+        text-shadow: 2px solid;
+        left: 20px;
+
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 700px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 16%;
+      background-color: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow:  2px 8px rgba(255, 177, 177, 0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card .brand {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 10px 0 0;
+    }
+
+    .card .tagline {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    .card .offer {
+      font-size: 18px;
+      color: #000;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+     .star1{
+        position: absolute;
+        top: 1100px;
+       color: #2f2f34;
+        font-size: 18px;
+        text-shadow: 2px solid;
+        left: 20px;
+
+    }
+       .container1 {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 1250px;
+      gap: 10.1px;
+      flex-wrap: wrap;
+    }
+
+    .card1 {
+      width: 16%;
+      background-color: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .card1 img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card1 .brand1 {
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .card1 .tagline1 {
+      font-size: 14px;
+      color: #444;
+      margin-top: 5px;
+    }
+
+    .card1 .offer1 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #000;
+    }
+
+      .footer {
+      background: #ebe9e9;
+      color: #000000;
+      padding: 30px 5%;
+      text-align: center;
+      position: absolute;
+      top: 1700px;
+      width: 90%;
+    }
+
+    .footer img {
+      height: 40px;
+    }
+
+    .social {
+      margin: 15px 0;
+    }
+
+    .social i {
+      font-size: 24px;
+      margin: 0 10px;
+    }
+
+</style>
+</head>
+<body>
+    <div>
+    <nav class="navbar">
+        <img src="./website/myntra-logo-freelogovectors.net_.png" alt="logo" class="logo">
+      <div class="nav-links">
+      <a href="#">MEN</a>
+      <a href="#">WOMEN</a>
+      <a href="#">KIDS</a>
+      <a href="#">HOME</a>
+      <a href="#">BEAUTY</a>
+      <a href="#">GENZ</a>
+      <a href="#">STUDIO </a>
+    </div>
+      <div class="searchbar">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search for products, brands and more">
+    </div>
+
+      <div class="icons">
+      <div class="iconItem">
+        <i class="far fa-user"></i>
+        Profile
+      </div>
+      <div class="iconItem">
+        <i class="far fa-heart"></i>
+        Wishlist
+      </div>
+      <div class="iconItem">
+        <i class="fas fa-shopping-bag"></i>
+        Bag
+      </div>
+    </div>
+    </nav>
+  </div>
+    
+   <img src="./website/ture.png" alt="img" class="content">
+   <div class="text"><h1>U.S <br>POLO ASSN.</h1><br><h3>Up To 50% Off </h3><h5>+ Explore</h5></div>
+
+   <div class="star"><h1>RISING STAR</h1></div>
+
+
+   <div class="container">
+   <div class="card">
+    <img src="./website/rare_rabbit.jpeg" alt="Rare Rabbit">
+    <div class="brand">RARE RABBIT</div>
+    <div class="tagline">Style Meets Comfort</div>
+    <div class="offer">Min. 50% Off</div>
+  </div>
+
+  <div class="card">
+    <img src="./website/snitch_.jpg" alt="Snitch">
+    <div class="brand">SNITCH x BEWAKOOF</div>
+    <div class="tagline">Modern Comfort</div>
+    <div class="offer">Min. 60% Off</div>
+  </div>
+
+  <div class="card">
+    <img src="./website/power.avif" alt="Powerlook">
+    <div class="brand">POWERLOOK x URBANO</div>
+    <div class="tagline">Effortless Fashion</div>
+    <div class="offer">Min. 60% Off</div>
+  </div>
+
+  <div class="card">
+    <img src="./website/17-7.jpg" alt="FableStreet">
+    <div class="brand">FableStreet x Globus</div>
+    <div class="tagline">Western Flair, Modern Elegance</div>
+    <div class="offer">Min. 50% Off</div>
+  </div>
+
+  <div class="card">
+    <img src="./website/images.jpeg" alt="House of Chikankari">
+    <div class="brand">House of Chikankari</div>
+    <div class="tagline">Shine with Confidence</div>
+    <div class="offer">Min. 30% Off</div>
+  </div>
+
+  <div class="card">
+    <img src="./website/giva.webp" alt="GIVA  PALMOMAS">
+    <div class="brand">GIVA  PALMOMAS</div>
+    <div class="tagline">Shine Bright,Wear Beautiful</div>
+    <div class="offer">Min. 65% Off</div>
+  </div>
+</div>
+</div>
+
+   <div class="star1"><h1>GRAND GLOBAL BRANDS</h1></div>
+
+  <div class="container1">
+  <div class="card1">
+    <img src="./website/b.webp" alt="Dorothy Perkins Boohoo">
+    <div class="brand1">DOROTHY PERKINS | boohoo</div>
+    <div class="tagline1">Hottest Pairs</div>
+    <div class="offer1">MIN. 30% OFF</div>
+  </div>
+
+  <div class="card1">
+    <img src="./website/images (1).jpeg" alt="Mango">
+    <div class="brand1">MANGO</div>
+    <div class="tagline1">Stunning Footwear</div>
+    <div class="offer1">UP TO 60% OFF</div>
+  </div>
+
+  <div class="card1">
+    <img src="./website/images (2).jpeg" alt="ALDO">
+    <div class="brand1">ALDO</div>
+    <div class="tagline1">Sneakers & More</div>
+    <div class="offer1">MIN. 40% OFF</div>
+  </div>
+
+  <div class="card1">
+    <img src="./website/images (3).jpeg" alt="Calvin Klein">
+    <div class="brand1">Calvin Klein</div>
+    <div class="tagline1">Must-Have Collection</div>
+    <div class="offer1">UP TO 50% OFF</div>
+  </div>
+
+  <div class="card1">
+    <img src="./website/ga.jpg" alt="GANT">
+    <div class="brand1">GANT</div>
+    <div class="tagline1">Laid-Back Styles</div>
+    <div class="offer1">MIN. 30% OFF</div>
+  </div>
+
+   
+</div>
+
+  <footer class="footer">
+    <div>
+      <a href="#"><img src="./website/myntra-logo-freelogovectors.net_.png" alt="Myntra"></a>
+    </div>
+    <div class="social">
+      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    <p>© 2025 www.myntra.com. All rights reserved.</p>
+  </footer>
+
+
+ </div>
+    
+</body>
+</html>

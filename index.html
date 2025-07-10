@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(#fce9f1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      width: 360px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .banner {
+      background: url('https://i.pinimg.com/originals/39/59/97/395997be6f5afcab573ea16ad8878ce6.png') no-repeat center;
+      background-size: cover;
+      height: 150px;
+    }
+
+    .form-box {
+      padding: 35px;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .checkbox {
+      margin: 15px 0;
+      font-size: 14px;
+    }
+
+    .checkbox input {
+      margin-right: 8px;
+    }
+
+    .checkbox a {
+      color: #e60073;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #999ba5;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .help {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .help a {
+      color: #e60073;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #num{
+        position: absolute;
+    top: 310px;
+    left: 36.1%;
+
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="banner"></div>
+  <div class="form-box">
+    <center><h2><b>Login</b> or <b>Signup</b></h2></center>
+    
+    <label for="mobile" id="num">+91</label>
+    <input type="text" id="mobile" placeholder="Mobile Number">
+
+    <div class="checkbox">
+      <input type="checkbox" id="terms">
+      <label for="terms">By continuing, I agree to the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a> and I am above 18 years old.</label>
+    </div>
+
+    <button class="btn" onclick="window.location.href='./Myntra.html'">CONTINUE</button>
+
+
+    <div class="help">
+      Have trouble logging in? <a href="#">Get help</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
